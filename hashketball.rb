@@ -251,12 +251,9 @@ def most_points_scored
               end
             end
           end
-          if stats[:points] == most_points
-           return player
-         end
         end
       end
     end
   end
 end
-end
+
