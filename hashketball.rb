@@ -268,4 +268,3 @@ def most_points_scored
     end
   end
 end
-
