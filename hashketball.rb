@@ -220,14 +220,24 @@ def big_shoe_rebounds
               end
             end
           end
+        end
+      end
+    end
+  end
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |player, stats|
           if stats[:shoe] == biggest_shoe
            return stats[:rebounds]
-         end
         end
       end
     end
   end
 end
+
+if stats[:shoe] == biggest_shoe
+ return stats[:rebounds]
 
 def most_points_scored
   most_points = nil
