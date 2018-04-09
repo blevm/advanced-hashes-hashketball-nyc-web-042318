@@ -230,6 +230,7 @@ def big_shoe_rebounds
         data.each do |player, stats|
           if stats[:shoe] == biggest_shoe
            return stats[:rebounds]
+         end
         end
       end
     end
@@ -256,4 +257,3 @@ def most_points_scored
     end
   end
 end
-
