@@ -252,7 +252,6 @@ def most_points_scored
             end
           end
           if stats[:points] == most_points
-            binding.pry
            return player
          end
         end
